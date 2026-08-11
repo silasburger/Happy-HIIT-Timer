@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeExercise, setExercises } from './exercisesSlice';
 import React, { useRef } from 'react';
 import { useDrag, useDrop } from 'react-dnd';
-import { ReactComponent as GripIcon } from '../../assets/grip.svg';
+import GripIcon from '../../assets/grip.svg?react';
 
 const DRAG_TYPE = 'EXERCISE';
 

@@ -1,12 +1,14 @@
+import daisyui from 'daisyui';
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+export default {
+  content: ['./index.html', './src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
-    extend: { 
+    extend: {
       colors: {
-      charcoal: '#36454F'
-    }
+        charcoal: '#36454F',
+      },
+    },
   },
-  },
-  plugins: [require("daisyui")],
-}
+  plugins: [daisyui],
+};
